@@ -1,0 +1,14 @@
+/* Merchandise section */
+.merchandise{background:#e9e4d8}
+.merch-heading{text-align:center;max-width:650px;margin:0 auto 45px}
+.merch-heading h2{font-family:var(--display);font-size:clamp(2.5rem,5vw,4rem);letter-spacing:-.06em;line-height:1.1;margin:15px 0}
+.merch-heading h2 em{font-family:Georgia,serif;font-weight:400}
+.merch-heading p{color:var(--muted)}
+.merch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;max-width:1050px;margin:auto}
+.merch-card{background:#f6f3eb;border-radius:10px;overflow:hidden;box-shadow:0 12px 35px #073b3a12;transition:transform .3s ease}
+.merch-card:hover{transform:translateY(-6px)}
+.merch-card img{display:block;width:100%;height:480px;object-fit:contain;background:#fff}
+.merch-info{padding:23px}
+.merch-info span{color:var(--copper);font-size:.68rem;font-weight:800;letter-spacing:.13em}
+.merch-info h3{font-family:var(--display);font-size:1.4rem;margin:8px 0 0}
+@media(max-width:680px){.merch-grid{grid-template-columns:1fr}.merch-card img{height:420px}}
