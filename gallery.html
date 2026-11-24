@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#073b3a">
+  <meta name="description" content="Explore surf, beach and tuk tuk moments around Kudawella with Pina Colada.">
+  <title>Gallery — Pina Colada Surf, Sea & Island Life</title>
+  <link rel="icon" type="image/jpeg" href="pina-colada-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="gallery-header">
+    <a class="brand" href="index.html" aria-label="Pina Colada home">
+      <span class="brand-mark">PC</span>
+      <span class="brand-copy"><strong>PINA COLADA</strong><small>KUDAWELLA · SRI LANKA</small></span>
+    </a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> THE PINA COLADA COLLECTION</p>
+        <h1>Life looks better<br><em>by the ocean.</em></h1>
+        <p class="hero-description">Little moments, salty air and the island life around Kudawella.</p>
+        <a class="discover-link" href="#photos">EXPLORE THE GALLERY <span>↓</span></a>
+      </div>
+      <div class="hero-index" aria-hidden="true"><span>01</span><i></i><span>03</span></div>
+    </section>
+
+    <section class="gallery-section" id="photos">
+      <div class="section-intro reveal">
+        <div>
+          <p class="eyebrow dark"><span></span> A LITTLE ISLAND INSPIRATION</p>
+          <h2>Moments worth<br><em>remembering.</em></h2>
+        </div>
+        <p class="section-note">From your first surf lesson to the quiet beauty of the coast, discover the feeling of Pina Colada.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter gallery photos">
+        <button class="filter-button active" data-filter="all" aria-pressed="true">All Photos <span>05</span></button>
+        <button class="filter-button" data-filter="surf" aria-pressed="false">Surf &amp; Beach</button>
+        <button class="filter-button" data-filter="tuk" aria-pressed="false">Tuk Tuk Service</button>
+      </div>
+
+      <div class="photo-grid" id="photoGrid" aria-live="polite">
+        <article class="photo-card photo-card-large reveal" data-category="surf" data-src="beach-coconuts.jpg" data-title="Island life">
+          <button class="photo-open" type="button" aria-label="Open photo: Island life">
+            <img src="beach-coconuts.jpg" alt="Coconut palms and tropical beach at Kudawella" loading="lazy">
+            <span class="photo-shade"></span>
+            <span class="photo-caption"><small>01 / ISLAND LIFE</small><strong>Under the palms</strong></span>
+            <span class="photo-arrow" aria-hidden="true">↗</span>
+          </button>
+        </article>
+        <article class="photo-card reveal" data-category="surf" data-src="surf-lessons.jpg" data-title="Learn to surf">
+          <button class="photo-open" type="button" aria-label="Open photo: Learn to surf">
+            <img src="surf-lessons.jpg" alt="Surf students practising with an instructor" loading="lazy">
+            <span class="photo-shade"></span>
+            <span class="photo-caption"><small>02 / SURF &amp; BEACH</small><strong>Find your first wave</strong></span>
+            <span class="photo-arrow" aria-hidden="true">↗</span>
+          </button>
+        </article>
+        <article class="photo-card reveal" data-category="surf" data-src="surf-school.jpg" data-title="Local surf school">
+          <button class="photo-open" type="button" aria-label="Open photo: Local surf school">
+            <img src="surf-school.jpg" alt="Surf instructor sharing tips at the beach" loading="lazy">
+            <span class="photo-shade"></span>
+            <span class="photo-caption"><small>03 / LOCAL EXPERIENCE</small><strong>Learn with the locals</strong></span>
+            <span class="photo-arrow" aria-hidden="true">↗</span>
+          </button>
+        </article>
+        <article class="photo-card reveal" data-category="surf" data-src="surf-instructor.jpg" data-title="Ready for the waves">
+          <button class="photo-open" type="button" aria-label="Open photo: Ready for the waves">
+            <img src="surf-instructor.jpg" alt="Surf instructor with visitors and surfboards" loading="lazy">
+            <span class="photo-shade"></span>
+            <span class="photo-caption"><small>04 / GOOD TIMES</small><strong>Ready for the waves</strong></span>
+            <span class="photo-arrow" aria-hidden="true">↗</span>
+          </button>
+        </article>
+        <article class="photo-card photo-card-wide reveal" data-category="surf" data-src="surf-lesson.jpg" data-title="Your surf experience">
+          <button class="photo-open" type="button" aria-label="Open photo: Your surf experience">
+            <img src="surf-lesson.jpg" alt="A moment from the Pina Colada surf experience" loading="lazy">
+            <span class="photo-shade"></span>
+            <span class="photo-caption"><small>05 / THE EXPERIENCE</small><strong>Your ocean story starts here</strong></span>
+            <span class="photo-arrow" aria-hidden="true">↗</span>
+          </button>
+        </article>
+      </div>
+
+      <div class="empty-state" id="tukEmpty" hidden>
+        <span class="empty-icon" aria-hidden="true">✳</span>
+        <p class="eyebrow dark">COMING SOON</p>
+        <h3>Tuk tuk moments<br><em>are on the way.</em></h3>
+        <p>We’ll add the pickup and island ride photos here soon.</p>
+      </div>
+    </section>
+
+    <section class="gallery-footer reveal">
+      <p class="eyebrow"><span></span> YOUR ISLAND STORY</p>
+      <h2>Ready to make<br><em>your own memories?</em></h2>
+      <a class="booking-link" href="https://wa.me/94765288241" target="_blank" rel="noopener">BOOK YOUR EXPERIENCE <span>↗</span></a>
+      <p class="footer-location">KUDAWELLA · HIRIKETIYA · SRI LANKA</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© PINA COLADA</span>
+    <a href="index.html">RETURN TO HOME ↑</a>
+    <span>SURF · SEA · ISLAND LIFE</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo viewer">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous photo">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImage" src="" alt="">
+      <figcaption><span id="lightboxTitle"></span><small id="lightboxCount"></small></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next photo">›</button>
+    <p class="lightbox-hint">USE ← → KEYS OR SWIPE TO EXPLORE</p>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
